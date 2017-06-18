@@ -1,14 +1,20 @@
-<img src="http://dennisweissmann.me/assets/DeviceKit.svg" height="128">
+<img src="https://cdn.rawgit.com/dennisweissmann/DeviceKit/master/DeviceKit.svg" height="128">
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/dennisweissmann/DeviceKit/master/LICENSE)
-[![Build Status](https://travis-ci.org/dennisweissmann/DeviceKit.svg)](https://travis-ci.org/dennisweissmann/DeviceKit)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/DeviceKit.svg)](https://cocoapods.org/pods/DeviceKit)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/DeviceKit.svg?style=flat)](http://cocoadocs.org/docsets/DeviceKit)
 
+
+| Branch | Build Status | Versions |
+|:---------|:--------------:|:----------:|
+| **master** |[![Build Status](https://travis-ci.org/dennisweissmann/DeviceKit.svg?branch=master)](https://travis-ci.org/dennisweissmann/DeviceKit)| - |
+| **Swift 3** |[![Build Status](https://travis-ci.org/dennisweissmann/DeviceKit.svg?branch=swift-3.0)](https://travis-ci.org/dennisweissmann/DeviceKit)| >= 1.0 |
+| **Swift 2.3** |[![Build Status](https://travis-ci.org/dennisweissmann/DeviceKit.svg?branch=swift-2.3-unsupported)](https://travis-ci.org/dennisweissmann/DeviceKit)| < 1.0 |
+
 `Device` is a value-type replacement of [`UIDevice`](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIDevice_Class/).
 
-##Features
+## Features
 
 - [x] Device identification
 - [x] Device family detection
@@ -28,7 +34,7 @@ DeviceKit can be installed in various ways.
 
 ### CocoaPods
 
-#### Swift 3.0
+#### Swift 3
 ```ruby
 pod 'DeviceKit', '~> 1.0'
 ```
@@ -39,9 +45,9 @@ pod 'DeviceKit', :git => 'https://github.com/dennisweissmann/DeviceKit.git', :br
 
 ### Carthage
 
-#### Swift 3.0
+#### Swift 3
 ```ogdl
-github "dennisweissmann/DeviceKit" "HEAD"
+github "dennisweissmann/DeviceKit" ~> 1.0
 ```
 #### Swift 2.3 (Unsupported)
 ```ogdl
@@ -136,6 +142,9 @@ if device.batteryLevel >= 50 {
   showError()
 }
 ```
+
+## Source of Information
+All model identifiers are taken from the following website: https://www.theiphonewiki.com/wiki/Models or extracted from the simulator app bundled with Xcode.
 
 ## Contributing
 If you have the need for a specific feature that you want implemented or if you experienced a bug, please open an issue.
